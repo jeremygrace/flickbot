@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from urllib.request import urlopen
-from urllib.error import HTTPError, URLError
+# python2.7 EC2 env
+from urllib2 import urlopen, HTTPError, URLError
 from boto.s3.connection import S3Connection
 from bs4 import BeautifulSoup
 
