@@ -7,17 +7,7 @@ from urllib.error import HTTPError, URLError
 from bs4 import BeautifulSoup
 
 
-def get_html(url):
-    '''Function daily retrieves html from a designated website
-    and loads it into S3 bucket 'imdb-flickbot' as a .html file
-    for future use.
-
-    Parameters:
-        Inputs: url - website URL,
-                file - name of html file,
-                conn - S3 daily Connection
-        Output: HTML file into S3 bucket
-    '''
+def pull_html(url):
     # Scrape html of the specific site
     try:
         html = urlopen(url)
@@ -32,13 +22,19 @@ def get_html(url):
     return bsObj
 
 
-def parse_titles(bsObj, dict_name):
+def parse_todict(bsObj, dict_name):
+    # d
     dict_name = {}
+    # e
     exceptions = "^((?!Showtimes|Register|Home|Delete"\
                  "|Get\sthe|Share|Follow|\d\d*\sreview).)*$"
+    # bs
     for movie in bsObj.find_all('a', {'title': re.compile(exceptions)}):
+        # a,b
         a, b = movie['title'].split(' (')
+        # dict_name
         dict_name[a] = {}
+    # return
     return dict_name
 
 
@@ -49,10 +45,10 @@ if __name__ == '__main__':
     playing = "http://www.imdb.com/movies-in-theaters/?ref_=cs_inth"
     coming = "http://www.imdb.com/movies-coming-soon/?ref_=inth_cs"
     # Call GET function to scrape each site for HTML
-    inth = get_html(playing)
-    cs = get_html(coming)
+    inth = pull_html(playing)
+    cs = pull_html(coming)
     # Parse titles from bsObj specific to site
-    in_theaters = parse_titles(inth, 'in_theaters')
-    coming_soon = parse_titles(cs, 'coming_soon')
+    in_theaters = parse_todict(inth, 'in_theaters')
+    coming_soon = parse_todict(cs, 'coming_soon')
     print(in_theaters)
     print(coming_soon)
