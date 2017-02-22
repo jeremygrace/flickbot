@@ -30,10 +30,8 @@ def get_films(url, file, conn):
     # Use S3 conn to grab destination bucket
     imdb_bucket = conn.get_bucket('imdb-flickbot')
     # Indicate file name to write into the bucket
-    output_file = imdb_bucket.new_key('file.html')
-    # Specify type of file contents
+    output_file = imdb_bucket.new_key(file + '.html')
     output_file.content_type = 'text/html'
-    # Send content to S3 bucket
     output_file.set_contents_from_string(bsObj, policy='public-read')
 
 
