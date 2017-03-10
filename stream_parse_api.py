@@ -5,6 +5,7 @@ import requests
 import time
 import yaml
 from glob import glob
+from string import punctuation
 from datetime import datetime
 from imdb import IMDb
 from apiclient.discovery import build
@@ -33,7 +34,10 @@ def pull_movies(url, filename, dict_name, genres_url, conn):
         for key, val in simply_dict.items():
             if key == movie['genre_ids'][0]:
                 genre = val
-                dict_name.append({'title': movie['title'].encode('utf-8'),
+                mov = movie['title'].encode('utf-8')
+                for p in punctuation:
+                    mov = mov.replace(p, '')
+                dict_name.append({'title': mov,
                                   'genre': genre,
                                   'timestamp': timestamp})
     dict_name = collect_mpaa(conn, dict_name)
