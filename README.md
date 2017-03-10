@@ -15,3 +15,5 @@
   * [ 1 ] Apache Spark Cluster
   * [ 2 ] Amazon S3 buckets
   * [ 1 ] RDS Querying DB - Postgres
+  * [ 1 ] SlackClient bot profile
+  * [ 1 ] Slack Team for Testing
