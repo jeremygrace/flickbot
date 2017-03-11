@@ -1,5 +1,5 @@
 # Flickbot
- Slack bot for Movie Trailers
+ <i>Slack bot for Movie Trailers</i>
 
  ![](img/slack_bot.png)
 
@@ -17,3 +17,12 @@
   * [ 1 ] RDS Querying DB - Postgres
   * [ 1 ] SlackClient bot profile
   * [ 1 ] Slack Team for Testing
+
+<br>
+
+#### Phase I: The "Hello, World!" of Bot Trailers
+
+>* Built data streaming pipeline and cloud architecture
+>* Deliver a single trailer to Slack channel, given it is either a `in theaters` or `coming soon` film
+
+  <center>![](img/test-env-screenshot.png)</center>
