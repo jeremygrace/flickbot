@@ -29,7 +29,7 @@
 <br>
 ---
 
->Below is a mockup/screenshot of how the YouTube trailer video will render in the Slack channel.
+>Below is a screenshot of how the YouTube trailer videos render in the Slack channel.
 
 
 <p align="center">
