@@ -16,14 +16,14 @@
 
  APIs Utilized:
 
- * [The Movie Database]("https://www.themoviedb.org/documentation/api")
- * [IMDbpy]("http://imdbpy.sourceforge.net/index.html")
- * [YouTube Video]("https://developers.google.com/youtube/v3/")
+ * [The Movie Database](https://www.themoviedb.org/documentation/api)
+ * [IMDbpy](http://imdbpy.sourceforge.net/index.html)
+ * [YouTube Video](https://developers.google.com/youtube/v3/)
 
 <br>
 
  <p align="center">
-   <img src="img/flickbot-diagram.png"/>
+   <img src="img/flickbot-arch-diagram.png"/>
  </p>
 
 <br>
