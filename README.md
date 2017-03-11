@@ -1,7 +1,7 @@
 # Flickbot
  <i>Slack bot for Movie Trailers</i>
 
- <center>![](img/slack_bot.png)</center>
+<div style="text-align:center"><img src ="img/slack_bot.png" /></div>
 
 <br>
 
