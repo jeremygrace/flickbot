@@ -24,10 +24,13 @@
   * [ 1 ] Slack Team for Testing
 
 <br>
-
-#### Phase I: The "Hello, World!" of Bot Trailers
+---
+### Phase I: The "Hello, World!" of Bot Trailers
 
 >* Built data streaming pipeline from 3 APIs and the supportive cloud architecture
 >* Deliver a single trailer to a Slack channel, given it is either from a `in theaters` or `coming soon` film
 
-  <center>![](img/test-env-screenshot.png)</center>
+
+<p align="center">
+  <img src="img/test-env-screenshot.png"/>
+</p>
