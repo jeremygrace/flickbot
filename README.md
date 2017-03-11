@@ -1,7 +1,9 @@
 # Flickbot
  <i>Slack bot for Movie Trailers</i>
 
- ![](img/slack_bot.png)
+ <center>![](img/slack_bot.png)</center>
+
+<br>
 
  APIs:
 
@@ -22,7 +24,7 @@
 
 #### Phase I: The "Hello, World!" of Bot Trailers
 
->* Built data streaming pipeline and cloud architecture
->* Deliver a single trailer to Slack channel, given it is either a `in theaters` or `coming soon` film
+>* Built data streaming pipeline from 3 APIs and the supportive cloud architecture
+>* Deliver a single trailer to a Slack channel, given it is either from a `in theaters` or `coming soon` film
 
   <center>![](img/test-env-screenshot.png)</center>
