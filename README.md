@@ -8,27 +8,28 @@
 
 <br>
 
- APIs:
-
- * The Movie Database (themoviedb)
- * IMDbpy
- * YouTube Video
-
-
- Architecture:
-  * [ 2 ] Amazon EC2 instances
-  * [ 1 ] Apache Spark Cluster
-  * [ 2 ] Amazon S3 buckets
-  * [ 1 ] RDS Querying DB - Postgres
-  * [ 1 ] SlackClient bot profile
-  * [ 1 ] Slack Team for Testing
-
-<br>
----
 ### Phase I: The "Hello, World!" of Bot Trailers
 
 >* Built data streaming pipeline from 3 APIs and the supportive cloud architecture
 >* Deliver a single trailer to a Slack channel, given it is either from a `in theaters` or `coming soon` film
+
+
+ APIs Utilized:
+
+ * [The Movie Database (themoviedb)]('https://www.themoviedb.org/documentation/api')
+ * [IMDbpy]('http://imdbpy.sourceforge.net/index.html')
+ * [YouTube Video]('https://developers.google.com/youtube/v3/')
+
+<br>
+
+ <p align="center">
+   <img src="img/flickbot-diagram.png"/>
+ </p>
+
+<br>
+---
+
+>Below is a mockup/screenshot of how the YouTube trailer video will render in the Slack channel.
 
 
 <p align="center">
