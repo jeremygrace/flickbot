@@ -31,6 +31,8 @@
 
 <br>
 
+___
+
 <br>
 
  <p align="center">
@@ -38,7 +40,7 @@
  </p>
 
 <br>
----
+
 
 [comment]: <> (>Below is a screenshot of how the YouTube trailer videos render in the Slack channel.)
 
