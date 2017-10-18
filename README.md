@@ -42,6 +42,6 @@ ___
 <br>
 
 
-[comment]: <> (>Below is a screenshot of how the YouTube trailer videos render in the Slack channel.)
+[comment]: # (>Below is a screenshot of how the YouTube trailer videos render in the Slack channel.)
 
-[comment]: <> (<p align="center"><img src="img/test-env-screenshot.png"/></p>)
+[comment]: # (<p align="center"><img src="img/test-env-screenshot.png"/></p>)
