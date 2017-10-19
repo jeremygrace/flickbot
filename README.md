@@ -20,11 +20,11 @@
  * [IMDbpy](http://imdbpy.sourceforge.net/index.html)
  * [YouTube Video](https://developers.google.com/youtube/v3/)
 
-### Phase II: Top 3 Trailers - <i>"Decision Tree" Filtering</i>
+### Phase II: Top 3 Trailers - <i>Rule-based feature</i>
 
 <center>`Work In progress`</center>
 
-### Phase III: You Pick or Flickbot Picks - <i>Collaborative Filtering feature</i>
+### Phase III: You Pick or Flickbot Picks - <i>Model-based (Association Rules & Collaborative Filtering) feature</i>
 
 <center>`Long-term goal`</center>
 
